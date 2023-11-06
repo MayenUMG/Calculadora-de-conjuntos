@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #191919;
+    color: white;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    width: 37vw;
+    height: 29vw;
+    z-index: -1;
+    background-color: rgba(173, 216, 230, 0.079);
+    bottom: 8vw;
+    left: 19vw;
+    transition: width 800ms forwards 800ms;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    width: 37vw;
+    height: 29vw;
+    z-index: -1;
+    background-color: rgba(173, 216, 230, 0.108);
+    top: 8vw;
+    right: 22vw;
+}
+
+
+h3 {
+    padding: 0 0 4vw 0;
+    font-size: 3vw;
+}
+
+.venn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.circle {
+    width: auto;
+    height: auto;
+    /* padding: 4vw 4vw 4vw 0; */
+    border-radius: 50%;
+    background-color: rgba(173, 216, 230, 0.422);   
+    border: 3px solid rgb(207, 243, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #191919;
+}
+
+#circleA {
+    position: absolute;
+    left: 38vw;
+    padding: 4vw 8vw 4vw 01vw;
+    width: 16vw;
+}
+
+#circleB {
+    position: absolute;
+    right: 38vw;
+    padding: 4vw 01vw 4vw 8vw;
+    width: 16vw;
+}
+
+#circleResultado {
+    padding: 4vw;
+    z-index: 1;
+    background-color: transparent;
+    border: none;
+}
+
+#resultado {
+    margin-top: 20px;
+}
+
+#formularioConjuntos {
+    align-items: center;
+}
+
+.contenedorInputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputConjunto {
+    padding: 1vw;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputConjunto input {
+    padding: 0.8vw 1.4vw;
+    margin: 0.6vw;
+    background-color: #2b2b2b;
+    border: 1px solid lightblue;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.inputConjunto input:focus {
+    background-color: #191919;
+}
+
+button {
+    padding: 1vw;
+    background-color: #2b2b2b;
+    color: white;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    transition: padding 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: lightblue;
+    color: black;
+    font-weight: 600;
+    padding: 1.3vw;
+    transition: padding 0.2s ease-in-out;
+}
+
+

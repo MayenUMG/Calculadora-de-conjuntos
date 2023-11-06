@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Calculadora de Conjuntos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora de Conjuntos</h1>
+    <h3>Proyecto Final</h3>
+    <form id="formularioConjuntos">
+
+        <div class="contenedorInputs">
+            <div class="inputConjunto">
+                <label for="conjuntoA">Conjunto A:</label>
+                <input type="text" id="conjuntoA" placeholder="Ejemplo: 1, 2, 3" required><br>
+            </div>
+            <div class="inputConjunto">
+                <label for="conjuntoB">Conjunto B:</label>
+                <input type="text" id="conjuntoB" placeholder="Ejemplo: 2, 3, 4" required><br>
+            </div>
+        </div>
+
+        </div>
+
+        <button type="button" id="union">Calcular Unión</button>
+        <button type="button" id="interseccion">Calcular Intersección</button>
+        <button type="button" id="diferencia">Calcular Diferencia</button>
+        <button type="button" id="subconjunto">Comprobar Subconjunto</button>
+    </form>
+
+    <div class="venn">
+        <div class="circle" id="circleA">A</div>
+        <div class="circle" id="circleResultado">Resultado</div>
+        <div class="circle" id="circleB">B</div>
+    </div>
+
+    <div id="resultado"></div>
+    <script src="app.js"></script> 
+</body>
+</html>
